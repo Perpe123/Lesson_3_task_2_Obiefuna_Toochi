@@ -141,10 +141,10 @@ table {
     width: 100vw;
     display: grid;
     overflow-x: hidden;
-    grid-template: "header" 50px "section" 1fr "aside" 1fr "footer" 50px / 1fr;
+    grid-template: "header" 100px "section" 1fr "aside" 1fr "footer" 50px / 1fr;
 }
 
-div a {
+div > a {
     font-family: cursive;
     font-size: 17px;
     background-color: rgb(252 231 231);
@@ -163,14 +163,20 @@ header {
     justify-content: center;
 }
 
+
 p {
     text-align: justify;
     line-height: 1.5;
 }
 
+nav {
+    margin-top: 1rem;
+}
+
 nav a {
     color: #e96d63;
     text-decoration: none;
+    margin-right: .7rem;
 }
 
 nav a:hover {
@@ -200,7 +206,7 @@ aside .image {
     height: 100%;
 }
 
-div a:hover {
+div > a:hover {
     color: rgb(252 231 231);
     background-color: lightblue;
     border-radius: 7px;
@@ -266,5 +272,9 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         padding: 0.8rem;
+    }
+
+    nav {
+        margin-top: 0;
     }
 }
